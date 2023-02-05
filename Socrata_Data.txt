@@ -1,0 +1,13 @@
+SOCRATA DATA API
+
+API ENDPOINT
+https://healthdata.gov/resource/7ctx-gtb7.json
+
+API ENDPOINT WITH QUERY FILTER
+https://healthdata.gov/resource/7ctx-gtb7.json?$select=state,collection_date,total_staffed_adult_icu_beds&state=KY
+
+API FIELD NAMES
+
+state
+collection_date
+total_staffed_adult_icu_beds
