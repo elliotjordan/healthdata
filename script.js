@@ -5,9 +5,9 @@ fetch("https://healthdata.gov/resource/7ctx-gtb7.json?$select=state,collection_d
 })
 .then(function(fields){
 	let placeholder = document.querySelector("#data-output");
-	let out = "";
+	let output = "";
 	for(let field of fields){
-		out += `
+		output += `
 			<tr>
 				<td style="">${field.state}</td>
 				<td style="">${field.collection_date}</td>
@@ -16,5 +16,5 @@ fetch("https://healthdata.gov/resource/7ctx-gtb7.json?$select=state,collection_d
 		`;
 	}
 
-	placeholder.innerHTML = out;
+	placeholder.innerHTML = output;
 });
